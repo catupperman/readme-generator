@@ -71,24 +71,33 @@ function generateMD(responses) {
     return `
     # ${responses.title}
 ## Table of Contents
-* [installation](#installation)
 * [description](#description)
+* [installation](#installation)
 * [methods](#methods)
 * [contributions](#contributions)
 * [testing](#testing)
 * [license](#license)
+* [contact](#contact)
 
 
+## Description of Project
+> ${responses.description}
 ## Installation
 > ${responses.installation}
-## Description of Project
 ## Methods Used
+> ${responses.methods}
 ## Contributions
-## Testing Methods
+> ${responses.contributions}
+## Testing Process
+> ${responses.testing}
 ## License
 ${getLicenseBadge(responses.license)}
 Copyright (C) 2021 ${responses.username}
 ${getLicenseInfo(responses.license)}
+## Contact
+> "github.com/"${responses.username}
+> "email: " ${responses.email}
+> "Prefered Contact: " ${responses.contact}
             `
 }
 
