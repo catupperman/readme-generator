@@ -95,9 +95,9 @@ ${getLicenseBadge(responses.license)}
 Copyright (C) 2021 ${responses.username}
 ${getLicenseInfo(responses.license)}
 ## Contact
-> "github.com/"${responses.username}
-> "email: " ${responses.email}
-> "Prefered Contact: " ${responses.contact}
+* "github.com/"${responses.username}
+* "email: " ${responses.email}
+* "Prefered Contact: " ${responses.contact}
             `
 }
 
