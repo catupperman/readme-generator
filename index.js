@@ -145,7 +145,8 @@ inquirer
         {
             type: "list",
             message: "What is your preferred method of contact?",
-            name: ["Email", "Text", "Owl"]
+            name: "contact",
+            choices: ["Email", "Text", "Owl"]
         }
     ])
     .then((answers) => {
