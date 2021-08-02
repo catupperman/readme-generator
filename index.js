@@ -1,22 +1,17 @@
 //TO DO: a command-line application that accepts user input then prompted for information about my application repository
 // A high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
-//TODO: entering project title then, this is displayed as the title of the README
-
-// TO DO: choose a license for my application from a list of options, then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-// TO DO: enter my GitHub username, then  this is added to the section of the README entitled Questions, with a link to my GitHub profile
-// TODO: enter my email addres, then this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-// TODO: click on the links in the Table of Contents, then I am taken to the corresponding section of the README
 const path = require("path");
 const fs = require("fs");
 const inquirer = require("inquirer")
 
+// TO DO: choose a license for my application from a list of options, then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
 function getLicenseBadge(license) {
     if (license === "MIT") {
         return `![MIT](https://img.shields.io/badge/License-MIT-blue)`
     } else if (license === "Appache 2.0"){
         return `![Appache 2.0](https://img.shields.io/badge/License-Appache%202.0-blue)`
-    } else if (license === "Appache 2.0"){
+    } else if (license === "BSD"){
         return `![BSD](https://img.shields.io/badge/License-BSD-blue)`
     }  else {
         return `![BSD](https://img.shields.io/badge/License-GPL-blue)`
@@ -25,21 +20,19 @@ function getLicenseBadge(license) {
 
 function getLicenseInfo(license) {
     if (license === "MIT") {
-        return `"Copyright 2021 catupperman
-
+        return `"Copyright 2021
+        
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
         
         The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
         
         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."`
     } else if (license === "Appache 2.0"){
-        return `"Copyright 2021 catupperman
-
-        Licensed under the Apache License, Version 2.0 (the "License");
+        return `"Licensed under the Apache License, Version 2.0 (the "License");
         you may not use this file except in compliance with the License.
         You may obtain a copy of the License at
         
-            http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
         
         Unless required by applicable law or agreed to in writing, software
         distributed under the License is distributed on an "AS IS" BASIS,
@@ -48,7 +41,7 @@ function getLicenseInfo(license) {
         limitations under the License."`
     } else if (license === "BSD"){
         return `"Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
+        
         1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
         
         2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
@@ -61,27 +54,29 @@ function getLicenseInfo(license) {
         it under the terms of the GNU General Public License as published by
         the Free Software Foundation, either version 3 of the License, or
         (at your option) any later version.
-    
+        
         This program is distributed in the hope that it will be useful,
         but WITHOUT ANY WARRANTY; without even the implied warranty of
         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
         GNU General Public License for more details.
-    
+        
         You should have received a copy of the GNU General Public License
         along with this program.  If not, see <http://www.gnu.org/licenses/>."`
     }
 }
 
+// TODO: click on the links in the Table of Contents, then I am taken to the corresponding section of the README
+//TODO: entering project title then, this is displayed as the title of the README
 function generateMD(responses) {
     return `
-# ${responses.title}
+    # ${responses.title}
 ## Table of Contents
 * [installation](#installation)
 * [description](#description)
 * [methods](#methods)
 * [contributions](#contributions)
 * [testing](#testing)
-* [license](#license) 
+* [license](#license)
 
 
 ## Installation
@@ -95,9 +90,10 @@ ${getLicenseBadge(responses.license)}
 Copyright (C) 2021 ${responses.username}
 ${getLicenseInfo(responses.license)}
             `
-
-
 }
+
+// TO DO: enter my GitHub username, then  this is added to the section of the README entitled Questions, with a link to my GitHub profile
+// TODO: enter my email addres, then this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 inquirer
     .prompt([
         {

@@ -7,7 +7,7 @@
 * [methods](#methods)
 * [contributions](#contributions)
 * [testing](#testing)
-* [license](#license) Copyright (C) 2021 catupperman
+* [license](#license) 
 
 
 ## Installation
