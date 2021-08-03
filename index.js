@@ -3,7 +3,8 @@
 
 const path = require("path");
 const fs = require("fs");
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
+const { O_WRONLY } = require("constants");
 
 // TO DO: choose a license for my application from a list of options, then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
 function getLicenseBadge(license) {
@@ -20,8 +21,7 @@ function getLicenseBadge(license) {
 
 function getLicenseInfo(license) {
     if (license === "MIT") {
-        return `"Copyright 2021
-        
+        return `"
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
         
         The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -67,11 +67,11 @@ function getLicenseInfo(license) {
 
 function preferedContact(contact){
     if (contact==="Email"){
-        `![EmailImage](images/email.gif)`
+        return`![Email](./images/email.gif)`
     } else if (contact==="Text"){
-        `![TextImage](images/text.gif)`
+        return`![Text](./images/text.gif`
     } else {
-        `![OwlImage](images/owl.gif)`
+        return`![Owl](./images/owl.gif)`
     }
 
 }
