@@ -65,11 +65,22 @@ function getLicenseInfo(license) {
     }
 }
 
+function preferedContact(contact){
+    if (contact==="Email"){
+        `![https://www.google.com/url?sa=i&url=https%3A%2F%2Fgifer.com%2Fen%2FFmcf&psig=AOvVaw3kJNEn2-SPf0rHGiGH6hTb&ust=1628036220839000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjBtdnJk_ICFQAAAAAdAAAAABAD]`
+    } else if (contact==="Text"){
+        `![https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Ftexting&psig=AOvVaw04jzHe_SipFtWaVO7vK-27&ust=1628036129760000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMCHlLLJk_ICFQAAAAAdAAAAABAR]`
+    } else {
+        `![https://www.google.com/url?sa=i&url=https%3A%2F%2Fgfycat.com%2Fgifs%2Fsearch%2Fbird%2Bvs%2Bowl&psig=AOvVaw0tP2ea7w-D-ai0B-qLEQU9&ust=1628035985035000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJj5iOrIk_ICFQAAAAAdAAAAABAD]`
+    }
+
+}
+
 // TODO: click on the links in the Table of Contents, then I am taken to the corresponding section of the README
 //TODO: entering project title then, this is displayed as the title of the README
 function generateMD(responses) {
     return `
-    # ${responses.title}
+# ${responses.title}
 ## Table of Contents
 * [description](#description)
 * [installation](#installation)
@@ -95,9 +106,10 @@ ${getLicenseBadge(responses.license)}
 Copyright (C) 2021 ${responses.username}
 ${getLicenseInfo(responses.license)}
 ## Contact
-* "github.com/"${responses.username}
-* "email: " ${responses.email}
-* "Prefered Contact: " ${responses.contact}
+* github.com/${responses.username}
+* email:  ${responses.email}
+* Prefered Contact: ${responses.contact} 
+${preferedContact(responses.contact)}
             `
 }
 
