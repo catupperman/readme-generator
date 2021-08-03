@@ -101,7 +101,7 @@ function generateMD(responses) {
 ## Methods Used
 > ${responses.methods}
 ## Contributions
-> ${responses.contributions}
+> ${responses.contribution}
 ## Testing Process
 > ${responses.testing}
 ## License
