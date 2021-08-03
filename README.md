@@ -11,18 +11,18 @@
 
 
 ## Description of Project
-> Generating a README using node 
+> Generate README using node
 ## Installation
 > package json
 ## Methods Used
-> inquirer
+> node
 ## Contributions
 > undefined
 ## Testing Process
-> sdfdsd
+> jso
 ## License
 ![MIT](https://img.shields.io/badge/License-MIT-blue)
-Copyright (C) 2021 
+Copyright (C) 2021 Catupper
 "Copyright 2021
         
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -31,7 +31,8 @@ Copyright (C) 2021
         
         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
 ## Contact
-* github.com/
-* email:  
-* Prefered Contact: Email
+* github.com/Catupper
+* email:  catupperman@gmail.com
+* Prefered Contact: Owl 
+undefined
             
