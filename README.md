@@ -1,5 +1,5 @@
 
-# dd
+# Cat's README Generator
 ## Table of Contents
 * [description](#description)
 * [installation](#installation)
@@ -11,27 +11,35 @@
 
 
 ## Description of Project
-> d
+> This project was taking node, downloading json packages, and utilizing information from those packages.  This is a very similar style to using APIs.  Finding the package that is applicable for your application is always a challenge.  Once understanding that inquirer would be the best fit, calling it with the require method, resulted in a response driven README generated within the terminal.
 ## Installation
-> ds
+> I pulled the [npm](https://www.npmjs.com/) package aka ```package.json```, entering ```npm install``` , and then the ```require``` method to narrow down to the [inquirer](https://www.npmjs.com/package/inquirer) package.
 ## Methods Used
-> swdq
+> * node * ```fs.writeFile```  promises  * inquirer package * [Shields IO](https://shields.io/category/license) *[Open Source Initiative](https://opensource.org/licenses/BSD-3-Clause) 
 ## Contributions
 > undefined
 ## Testing Process
-> dw
+> In order to ensure, all aspects of the application were working properly, I would continuously check each step of the way to make sure no error appeared.  I simply entered ```node index.js``` , then followed the prompts of questions within the terminal to make sure, each one (yes, all the questions on the page) showed within the README, and showed up well. For minimal aesthetic clean up, I would go within the README file, and make adjustments. 
 ## License
-![MIT](https://img.shields.io/badge/License-MIT-blue)
-Copyright (C) 2021 dew
-"
-        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+![Appache 2.0](https://img.shields.io/badge/License-Appache%202.0-blue)
+Copyright (C) 2021 catupperman
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
         
-        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        http://www.apache.org/licenses/LICENSE-2.0
         
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
 ## Contact
-* github.com/dew
-* email:  wfe
+* github.com/catupperman
+* email:  catupperman@gmail.com
 * Prefered Contact: Email 
->![Email](./images/email.gif)
+
+
+![Email](./images/email.gif)
             
