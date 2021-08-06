@@ -94,15 +94,18 @@ function generateMD(responses) {
 * [contact](#contact)
 
 
-## Description of Project
+## Description
+> [Video Tutorial Link](https://drive.google.com/file/d/1_tIml60z-uTeNkwzCDudcWvzsJKeMa-s/view)
+### Tutorial
+> [Tutorial](./images/README.gif)
 > ${responses.description}
 ## Installation
 > ${responses.installation}
-## Methods Used
+## Methods
 > ${responses.methods}
 ## Contributions
 > ${responses.contribution}
-## Testing Process
+## Testing
 > ${responses.testing}
 ## License
 ${getLicenseBadge(responses.license)}
